@@ -1,0 +1,43 @@
+/* Announcement Marquee Section */
+.announcement-marquee-section{
+    border: 0.75px solid rgba(255, 255, 255, 0.30);
+    background: linear-gradient(90deg, rgba(226, 255, 104, 0.70) 0%, rgba(10, 255, 161, 0.70) 100%);
+}
+span.marquee-text {
+    vertical-align: middle;
+    display: inline-flex;
+    align-items: center;
+    color: #38472A;
+    font-family: "Creato Display";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125.5%; /* 17.57px */
+    border-right: 1px solid #38472A;
+    padding-inline: 28px 32px;
+}
+.announcement-marquee-section .announcement-scroller {
+overflow: hidden;
+}
+.announcement-marquee-section .announcement-scroller-inner {
+    padding-block: 7px;
+    display: flex;
+    width: -moz-max-content;
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: scroll 50s linear infinite forwards;
+    align-items: center;
+    justify-content: center;
+}
+.announcement-marquee-section .announcement-scroller-inner:hover {
+    animation-play-state: paused;
+}
+
+
+@keyframes scroll {
+to {
+    transform: translate(calc(-50% - 10px));
+}
+}
+
+/* End of Announcement Marquee Section */

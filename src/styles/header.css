@@ -1,0 +1,72 @@
+/*------------- Header Styles -------------*/
+section.header-section {
+    background-color: #28422E;
+    color: #D9EBE2;
+    font-family: Montserrat;
+}
+.header-main-container{
+    position: relative;
+}
+.header-content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding-block: 30px;
+}
+.header-content-container .left-content, .header-content-container .right-content {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+}
+.header-content-container .left-content a.menu-btn {
+    display: flex;
+    gap: 16px;
+    text-decoration: none;
+    margin-right: 32px;
+}
+.header-content-container .right-content .contact-container a.contact-link {
+    display: flex;
+    gap: 12px;
+    text-decoration: none;
+}
+.header-content-container .right-content .contact-container a.contact-link span.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+a.header-logo-btn.cart-link {
+    position: relative;
+}
+a.header-logo-btn.cart-link span.cart-text {
+    position: absolute;
+    background-color: #28422E;
+    display: flex;
+    font-size: 12px;
+    border-radius: 12px;
+    aspect-ratio: 1;
+    top: 3px;
+    width: 20px;
+    justify-content: center;
+    align-items: center;
+    right: 6px;
+}
+.header-main-container img.header-left-to-up-leafs {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    height: auto;
+    max-height: 100%;
+}
+.header-main-container img.header-right-to-down-leafs {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    max-height: 100%;
+}
+
+/*------------- End of Header Styles -------------*/

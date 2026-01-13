@@ -1,0 +1,188 @@
+.strategy-section {
+  padding-block: 90px;
+  background-color: #D9EBE2;
+}
+.strategy-section .strategy-content-top-title .strategy-content-top-title-text {
+  color: #38472A;
+  font-size: 40px;
+  font-weight: 600;
+  font-family: 'Avigea';
+  text-align: center;
+  line-height: 0.94;
+  margin-bottom: 100px;
+  width: 100%;
+}
+.strategy-section .strategy-content-top-title .strategy-content-eyebrow {
+    text-align: center;
+    font-size: 16px;
+    color: #38472A;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.strategy-section-cards {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 16px;
+  overflow-x: auto;
+}
+
+.strategy-section .strategy-card-item {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 100px;
+  padding: 16px;
+  width: 100%;
+  border-radius: 8px;
+  background: #fff;
+  scroll-snap-align: start;
+  scroll-margin: 0 16px;
+}
+.strategy-section-cards .strategy-card-item .card-item-icon img {
+  max-width: 30px;
+  width: 100%;
+}
+.strategy-section .strategy-card-item .card-item-title .card-item-title-text {
+  color: #02010A;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.72px;
+  margin-bottom: 12px;
+}
+
+.strategy-section .strategy-card-item .card-item-title .card-item-description {
+  color: #5C5C5C;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: -0.54px;
+}
+
+@media (max-width: 1400px) {
+  .strategy-section .strategy-content-top-title .strategy-content-top-title-text {
+    font-size: 36px;
+  }
+  .strategy-section .strategy-card-item {
+    gap: 14px;
+  }
+  .strategy-section .strategy-content-top-title .strategy-content-top-title-text {
+    font-size: 32px;
+  }
+}
+@media (max-width: 1200px) {
+  .strategy-section .strategy-card-item {
+    gap: 8px;
+  }
+  .strategy-section .strategy-card-item .card-item-title .card-item-title-text {
+    margin-bottom: 18px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .strategy-section{
+    padding-block: 90px;
+  }
+  .strategy-section .strategy-card-item .card-item-title .card-item-title-text {
+    font-size: 18px;
+  }
+  .strategy-section .strategy-content-top-title{
+    margin-bottom: 80px;
+  }
+  .strategy-section .strategy-card-item .card-item-title .card-item-description {
+    font-size: 16px;
+  }
+  .strategy-section .strategy-content-top-title .strategy-content-top-title-text {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .strategy-section{
+    padding-block: 70px;
+  }
+  .strategy-section
+    .strategy-content-top-title
+    .strategy-content-top-title-text {
+    font-size: 20px;
+    line-height: normal;
+  }
+  .strategy-content-top-title {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .strategy-section .strategy-content-top-title{
+    margin-bottom: 60px;
+  }
+  .strategy-section .strategy-card-item {
+    gap: 4px;
+  }
+  .strategy-section-cards{
+    gap:10px
+  }
+  .strategy-section-cards .strategy-card-item .card-item-icon img {
+    max-width: 20px;
+  }
+  .strategy-section .strategy-card-item .card-item-title .card-item-title-text {
+    font-size: 16px;
+  }
+  .strategy-section
+    .strategy-card-item
+    .card-item-title
+    .card-item-description {
+    font-size: 14px;
+  }
+  .strategy-section .strategy-card-item {
+    padding-block: 16px;
+    padding-inline: 12px;
+  }
+}
+@media (max-width: 575px) {
+  .strategy-section{
+    padding-block: 50px;
+  }
+  .strategy-section-cards {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 12px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    padding-inline: 16px;
+    scroll-padding-inline: 16px;
+    margin-inline: -15px;
+  }
+  .strategy-section .strategy-content-top-title{
+    margin-bottom: 30px;
+  }
+
+  .strategy-section-cards .strategy-card-item {
+    scroll-snap-align: start;
+    max-width: 280px;
+    min-width: 280px;
+    flex: 0 0 auto;
+    padding: 16px;
+  }
+
+  .strategy-section-cards .strategy-card-item .card-item-title {
+    padding: 0;
+  }
+
+  .strategy-section-cards .strategy-card-item .card-item-title-text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .strategy-section-cards .strategy-card-item .card-item-description {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}

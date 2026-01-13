@@ -1,0 +1,220 @@
+@font-face {
+  font-family: 'Creato Display'; 
+  src: url('./../resource/creato_display/CreatoDisplay-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; 
+}
+@font-face {
+  font-family: 'Creato Display'; 
+  src: url('./../resource/creato_display/CreatoDisplay-ExtraBold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap; 
+}
+@font-face {
+  font-family: 'Creato Display'; 
+  src: url('./../resource/creato_display/CreatoDisplay-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; 
+}
+@font-face {
+  font-family: 'Creato Display'; 
+  src: url('./../resource/creato_display/CreatoDisplay-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; 
+}
+@font-face {
+  font-family: 'Creato Display'; 
+  src: url('./../resource/creato_display/CreatoDisplay-Thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap; 
+}
+/* Avigea font faces */
+@font-face {
+  font-family: 'Avigea';
+  src: url('./../resource/Avigea/Avigea.woff2') format('woff2'),
+       url('./../resource/Avigea/Avigea.woff') format('woff');
+  font-style: normal;
+  font-display: swap;
+}
+/*------------- End of Font Imports -------------*/
+/*------------- Base Styles -------------*/
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Creato Display', sans-serif; */
+    background-color: #f5f5f5;
+    color: #333;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+div#root {
+    max-width: 100%;
+}
+a, a:hover, a:active, a:visited {
+    color: inherit;
+}
+
+.b2b-container {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding-inline: 15px;
+}
+.header-text-btn {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    text-decoration: none;
+    padding: 14px 16px;
+    border: 1px solid #D9EBE2;
+    border-radius: 32px;
+}
+.header-logo-btn {
+    text-decoration: none;
+    background-color: #D9EBE2;
+    border-radius: 50%;
+    width: 46px;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-logo-btn>img {
+    width: 16px;
+}
+
+a.common-btn {
+    border-radius: 5px;
+    font-size: 16px;
+    border: 0;
+    padding: 11px 24px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    text-decoration: none;
+}
+a.hero-white-bg {
+    background-color: #fff;
+    color: #030712;
+}
+a.hero-light-bg {
+    background-color: #B5C4A9;
+    color: #030712;
+}
+a.common-btn.hero-white-bg {
+    box-shadow: 5px 5px #828E78;
+}
+a.common-btn.hero-light-bg {
+    box-shadow: 5px 5px #828E78;
+    font-family: 'Creato Display', sans-serif;
+}
+.swiper-button-disabled {
+    display: none;
+}
+@media (max-width: 440px) {
+    .b2b-hero-section .btn-container{
+        flex-wrap: wrap;
+    }
+    a.common-btn{
+        width: 70%;
+        text-align: center;
+    }
+}
+/*------------- End of Base Styles -------------*/
+/*------------- product card -------------*/
+.p-card {
+    width: 310px;
+    border-radius: 10px;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 17px;
+    text-decoration: none;
+    background-color: #fff;
+}
+.p-card-img {
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    aspect-ratio: 0.66;
+}
+.p-card-img img {
+    height: 100%;
+    inset: 0;
+    max-width: 100%;
+    -o-object-fit: scale-down;
+    object-fit: scale-down;
+    -o-object-position: center;
+    object-position: center;
+    position: absolute;
+    transition: scale 0.5s ease, opacity 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    width: 100%;
+}
+.p-card-img img:first-child {
+    scale: 1;
+    z-index: 1;
+}
+.p-card-img img:nth-child(2) {
+    object-fit: cover;
+    opacity: 0;
+    scale: 1;
+    visibility: hidden;
+    z-index: 0;
+}
+.p-card:hover .p-card-img img:first-child{
+    opacity: 0;
+    scale: 0.96;
+    visibility: hidden;
+}
+.p-card:hover .p-card-img img:nth-child(2) {
+    opacity: 1;
+    scale: 1.025;
+    visibility: visible;
+}
+.common-p-card-padding {
+    padding-inline: 16px;
+}
+p.p-card-title {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.p-card-info {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 8px;
+    color: #546248;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.65;
+}
+.p-card-price {
+    color: #55a02f;
+    font-size: 20px;
+    font-weight: 700;
+}
+.p-card .button-container {
+    margin-top: 16px;
+    text-align: center;
+}
+a.common-btn.p-card-btn {
+    background-color: #38472A;
+    color: #fff;
+    box-shadow: 5px 5px #798974;
+    width: 70%;
+    display: inline-block;
+}
+/*------------- End of product card -------------*/

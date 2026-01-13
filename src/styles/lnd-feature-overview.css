@@ -1,0 +1,75 @@
+/*------------- B2B Feature Overview Section -------------*/
+section.b2b-feature-overview-section {
+    padding-block: 80px;
+    background-color: #D9EBE2;
+    color: #38472A;
+}
+.b2b-feature-overview-section-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.b2b-feature-overview-section-container .image-container {
+    width: 56px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 1px solid #8CB5C8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+    margin-bottom: 16px;
+}
+h3.feature-title {
+    font-family: Avigea;
+    font-size: 40px;
+    line-height: 1.25;
+    margin-block: 0;
+    font-weight: 400;
+}
+p.feature-details {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-block: 0;
+    font-family: 'Montserrat';
+}
+@media (max-width: 768px) {
+    .b2b-feature-overview-section-container {
+        gap: 30px;
+    }
+    .b2b-feature-overview-section-container .feature-block {
+        flex: 1 1;
+    }
+    h3.feature-title {
+        font-size: 28px;
+    }
+    p.feature-details {
+        font-size: 16px;
+    }
+}
+@media (max-width: 576px) {
+    .b2b-feature-overview-section-container .feature-block {
+        flex: 1 1 calc(50% - 16px);
+    }
+    section.b2b-feature-overview-section {
+        padding-block: 40px;
+    }
+}
+@media (max-width: 440px) {
+    .b2b-feature-overview-section-container {
+        column-gap: 4px;
+        row-gap: 16px;
+    }
+    h3.feature-title {
+        font-size: 24px;
+    }
+    p.feature-details {
+        font-size: 14px;
+    }
+    
+}
+/*------------- End of B2B Feature Overview Section -------------*/

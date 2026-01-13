@@ -1,0 +1,148 @@
+.b2b-process-section {
+            background-color: #FFF9EE;
+            padding: 80px 0px;
+        }
+
+        .b2b-process-section .b2b-process-eyebrow {
+            color: #38472A;
+            text-align: center;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 150%; 
+            margin-bottom: 24px;
+        }
+
+        .b2b-process-section .b2b-process-title {
+            color: #38472A;
+            font-size: 40px;
+            font-weight: 400;
+            font-family: 'Avigea';
+            line-height: 122.25%;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+         .b2b-process-section .b2b-steps-container {
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding-top: 40px;
+        }
+
+        /* Timeline line */
+        .b2b-process-section .b2b-steps-container::before {
+            content: '';
+            position: absolute;
+            top: 8px;
+            left: 12.5%;
+            right: 12.5%;
+            height: 2px;
+            background-color: #c5bfa8;
+            z-index: 1;
+        }
+
+        .b2b-step-card {
+            background-color: #ffffff;
+            padding: 35px 25px;
+            border-radius: 16px;
+            position: relative;
+            margin-top: 30px;
+        }
+
+        /* Timeline dots */
+        .b2b-step-card::before {
+            content: '';
+            position: absolute;
+            top: -73px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 22px;
+            height: 22px;
+            background-color: #6b7456;
+            border-radius: 50%;
+            border: 4px solid #f5f3ed;
+            z-index: 1;
+        }
+
+       .b2b-process-section .b2b-steps-container .b2b-step-number {
+            color: #38472A;
+            font-size: 36px;
+            font-weight: 600;
+            font-family:' Montserrat';
+            line-height: 122.222%;
+            text-transform: capitalize;
+            margin-bottom: 20px;
+           
+        }
+
+        .b2b-process-section .b2b-steps-container .b2b-step-title {
+            color: #38472A;
+            font-size: 24px;
+            font-weight: 600;
+            font-family: 'Montserrat';
+            line-height: 133.333%;
+            text-transform: capitalize;
+        }
+
+        .b2b-process-section .b2b-steps-container .b2b-step-description {
+            color: #484848;
+            font-weight: 400;
+            font-family: 'Montserrat';
+            line-height: 24px; 
+        }
+
+        @media (max-width: 1024px) {
+            .steps-container {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 50px 30px;
+            }
+
+            .steps-container::before {
+                display: none;
+            }
+
+            .b2b-step-card::before {
+                top: -25px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .b2b-process-section {
+                padding: 60px 20px;
+            }
+
+            .b2b-process-section .b2b-process-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .b2b-process-section .b2b-process-title {
+                font-size: 28px;
+            }
+
+            .b2b-step-card {
+                padding: 30px 20px;
+            }
+            .b2b-process-section .b2b-process-title {
+                color: #38472A;
+                font-size: 28px;
+                font-weight: 700;
+            }
+            .b2b-process-section .b2b-steps-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .b2b-step-card::before {
+                display: none;
+            }
+            .b2b-process-section .b2b-steps-container::before {
+                display: none;
+            }
+            .b2b-process-section .b2b-process-title {
+                margin-bottom: 20px;
+            }
+            .b2b-process-section .b2b-steps-container {
+                padding-top: 20px;
+            }
+        }

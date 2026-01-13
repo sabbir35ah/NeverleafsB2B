@@ -1,0 +1,167 @@
+.bin-footer {
+  padding-top: 71px;
+  padding-bottom: 30px;
+  background: #38472A;
+  font-family: Montserrat;
+  
+}
+
+.list-social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0;
+}
+.bin-footer .bin-footer-container {
+  display: grid;
+  grid-template-columns: 162px 1fr;
+  gap: 70px;
+}
+.bin-footer .bin-footer-container .bin-nav-title {
+  font-size: 22px;
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 10px;
+  line-height: 30.8px;
+}
+.bin-footer .bin-footer-container .bin-first-content .bin-footer-text {
+  font-size: 16px;
+  color: #ffffff;
+  margin-top: 16px;
+}
+.bin-footer .bin-footer-container .bin-last-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 68px;
+}
+.bin-footer .bin-footer-container .bin-footer-list .bin-nav-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 18px;
+  color: #fff;
+}
+.bin-footer .bin-footer-container .bin-footer-list .bin-nav-list .bin-nav-item {
+  margin-bottom: 12px;
+}
+.bin-footer .bin-footer-container .bin-footer-list .bin-nav-list .bin-nav-item-text {
+  color: #484848;
+  font-size: 16px;
+}
+.bin-footer .bin-footer-container .bin-contact-container .bin-contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 10px;
+}
+.bin-footer .bin-footer-container .bin-contact-container .bin-contact-list .bin-contact-list-item {
+  display: grid;
+  grid-template-columns: 50px auto;
+  gap: 16px;
+  align-items: center;
+}
+.bin-footer .bin-footer-container .bin-contact-container .bin-contact-list .bin-contact-list-item .bin-contact-lbl {
+  color: #484848;
+  font-size: 16px;
+}
+.bin-footer .bin-footer-bottom-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 60px;
+}
+.bin-footer .bin-footer-bottom-content .bin-copyright {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #fff;
+}
+.bin-footer .bin-footer-bottom-content .payment-img-container img {
+  width: 100%;
+}
+.list-social__item{
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    list-style: none;
+}
+@media (max-width: 1400px) {
+  .bin .footer .bin-footer-container {
+    grid-template-columns: 320px 1fr;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .bin-footer .bin-footer-container {
+    gap: 40px;
+    grid-template-columns: 300px 1fr;
+  }
+  .bin-footer .bin-footer-container .bin-last-content {
+    gap: 40px;
+    grid-template-columns: 1fr 1fr 280px;
+  }
+}
+@media (max-width: 991px) {
+
+    .bin-footer .bin-footer-container {
+    grid-template-columns: 1fr;
+  }
+  .bin-footer .bin-footer-container .bin-first-content .img-container {
+    max-width: 170px;
+  }
+}
+
+@media (max-width: 767px) {
+  .bin-footer {
+    padding-top: 40px;
+  }
+  .bin-footer .bin-footer-container {
+    gap: 10px;
+  }
+  .bin-footer .bin-footer-container .bin-footer-list .bin-nav-title {
+    font-size: 20px;
+  }
+  .bin-footer .bin-footer-container .bin-footer-list .bin-nav-list .bin-nav-item {
+    font-size: 14px;
+  }
+  .bin-footer .bin-footer-container .bin-contact-container .bin-contact-list {
+    gap: 8px;
+  }
+  .bin-footer .bin-footer-container .bin-contact-container .bin-contact-list .bin-contact-list-item {
+    grid-template-columns: 30px auto;
+    gap: 8px;
+  }
+  .bin-footer .bin-footer-container .bin-contact-container .bin-contact-list .bin-contact-list-item .bin-icon-contact svg {
+    width: 30px;
+    height: 30px;
+  }
+  .bin-footer .bin-footer-container .bin-contact-container .bin-contact-list .bin-contact-list-item .bin-contact-lbl {
+    font-size: 14px;
+  }
+  .bin-footer .bin-footer-container .bin-last-content {
+    display: inline-block;
+    text-align: center;
+  }
+  .list-social {
+    justify-content: center;
+    }
+  .bin-footer .bin-footer-bottom-content {
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  .bin-footer .bin-footer-bottom-content .bin-copyright {
+    font-size: 14px;
+    text-align: center;
+  }
+  .bin-first-content {
+    justify-items: center;
+  }
+  .bin-footer-list {
+    margin-bottom: 20px;
+}
+
+
+}
