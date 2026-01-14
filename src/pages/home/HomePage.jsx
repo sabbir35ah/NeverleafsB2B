@@ -8,6 +8,7 @@ import BusinessFeature from './components/BusinessFeature'
 import BusinessProcess from './components/BusinessProcess'
 import B2bFaq from './components/B2bFaq'
 import B2bChoose from './components/B2bChoose'
+import RecomendedProduct from './components/RecomendedProduct'
 
 const HomePage = () => {
   return (
@@ -18,10 +19,10 @@ const HomePage = () => {
     <B2bChoose />
     <B2bPartner />
     <BusinessVolume />
+    <RecomendedProduct />
     <BusinessFeature />
     <BusinessProcess />
     <B2bFaq />
-
     </>
   )
 }

@@ -39,26 +39,26 @@ export const businessFaqData = [
 
 export const businessChooseData = [
     {
-        title: "Direct leverbaar, altijd beschikbaar",
-        description: "Wij hebben onze volledige collectie op voorraad, waardoor we snelle levering en een vertraging van uw zakelijke bestellingen kunnen garanderen.",
+        title: "Ready Stock, Always Available",
+        description: "We keep our entire collection in stock, ensuring fast fulfillment  zero delays your business orders.",
         icon: Choose1
 
     },
     {
-        title: "Groothandelsprijzen met hoge marges",
-        description: "Profiteer van exclusieve wederverkoopprijzen die zijn ontworpen om de winstmarge van uw winkel te maximaliseren.",
+        title: "Wholesale Prices with High Margins",
+        description: "Profit from exclusive reseller prices designed to maximize your store's profit margin.",
         icon: Choose2
 
     },
     {
-        title: "Premium kwaliteit onderscheidt",
-        description: "Natuurlijke texturen en duurzame materialen: uw klanten zullen het verschil merken.",
+        title: "Premium Quality That Stands Out",
+        description: "Natural textures, and durable materials your customers will notice the difference.",
         icon: Choose3
 
     },
     {
-        title: "Lage minimale bestelhoeveelheid",
-        description: "Bestel alleen wat je nodig hebt. Perfect voor zowel kleine boetiekjes als grote winkelketens.",
+        title: "Low Minimum Order Quantity",
+        description: "Order only what you need. Perfect for both small boutique shops and large-scale retailers.",
         icon: Choose4
 
     },
@@ -66,43 +66,149 @@ export const businessChooseData = [
 
 export const businessPartnerData = [
     {
-        title: "Kunstplanten voor binnen",  
-        imgUrl: "//neverleafs.nl/cdn/shop/files/Kunst_Kersenbloesem.webp?v=1748763319&amp;width=300",
+        title: "Kunstplanten",  
+        imgUrl: "/Kunstplanten.png",
         linkUrl: "/collections/kunstplanten-voor-binnen?filter.v.price.gte=&filter.v.price.lte=&filter.v.availability=1&sort_by=manual"
     },
      {
-        title: "Kunstplanten voor binnen",  
-        imgUrl: "//neverleafs.nl/cdn/shop/files/Kunst_Kersenbloesem.webp?v=1748763319&amp;width=300",
+        title: "Kersenbloesem",  
+        imgUrl: "/Kersenbloesem.png",
         linkUrl: "/collections/kunstplanten-voor-binnen?filter.v.price.gte=&filter.v.price.lte=&filter.v.availability=1&sort_by=manual"
     },
      {
-        title: "Kunstplanten voor binnen",  
-        imgUrl: "//neverleafs.nl/cdn/shop/files/Kunst_Kersenbloesem.webp?v=1748763319&amp;width=300",
+        title: "Kunstbomen",  
+        imgUrl: "/Kunstbomen.png",
         linkUrl: "/collections/kunstplanten-voor-binnen?filter.v.price.gte=&filter.v.price.lte=&filter.v.availability=1&sort_by=manual"
     },
      {
-        title: "Kunstplanten voor binnen",  
-        imgUrl: "//neverleafs.nl/cdn/shop/files/Kunst_Kersenbloesem.webp?v=1748763319&amp;width=300",
+        title: "Strelitzia",  
+        imgUrl: "/Strelitzia.png",
         linkUrl: "/collections/kunstplanten-voor-binnen?filter.v.price.gte=&filter.v.price.lte=&filter.v.availability=1&sort_by=manual"
     },
         {
-        title: "Kunstplanten voor binnen",  
-        imgUrl: "//neverleafs.nl/cdn/shop/files/Kunst_Kersenbloesem.webp?v=1748763319&amp;width=300",
+        title: "Eucalyptus",  
+        imgUrl: "/Eucalyptus.png",
         linkUrl: "/collections/kunstplanten-voor-binnen?filter.v.price.gte=&filter.v.price.lte=&filter.v.availability=1&sort_by=manual"
     },
      {
-        title: "Kunstplanten voor binnen",  
-        imgUrl: "//neverleafs.nl/cdn/shop/files/Kunst_Kersenbloesem.webp?v=1748763319&amp;width=300",
+        title: "Monstera ",  
+        imgUrl: "/Monstera.png",
         linkUrl: "/collections/kunstplanten-voor-binnen?filter.v.price.gte=&filter.v.price.lte=&filter.v.availability=1&sort_by=manual"
     },
      {
-        title: "Kunstplanten voor binnen",  
-        imgUrl: "//neverleafs.nl/cdn/shop/files/Kunst_Kersenbloesem.webp?v=1748763319&amp;width=300",
+        title: "Kunst Olijfboom",  
+        imgUrl: "/Kunst_Olijfboom.png",
         linkUrl: "/collections/kunstplanten-voor-binnen?filter.v.price.gte=&filter.v.price.lte=&filter.v.availability=1&sort_by=manual"
     },
      {
-        title: "Kunstplanten voor binnen",  
-        imgUrl: "//neverleafs.nl/cdn/shop/files/Kunst_Kersenbloesem.webp?v=1748763319&amp;width=300",
+        title: "Kunst Bamboe",  
+        imgUrl: "/Kunst_Bamboe.png",
         linkUrl: "/collections/kunstplanten-voor-binnen?filter.v.price.gte=&filter.v.price.lte=&filter.v.availability=1&sort_by=manual"
     },
+]
+
+export const trustedPartnerLogos = [
+    {
+        imgUrl: "/trusted1.png",  
+
+    },
+    {
+        imgUrl: "/trusted2.png",  
+    },  
+    {
+        imgUrl: "/trusted3.png",  
+    },
+    {
+        imgUrl: "/trusted4.png",  
+
+    },
+     {
+        imgUrl: "/trusted4.png",  
+
+    },
+]
+
+export const productCard =[
+        {
+            img1: "/p1.png" ,
+            img2: "/p2.png",
+            producttitle: "150cm kunst bloesem roze",
+            botanicalname:"Kersenbloesem",
+            oldprice:"150cm",
+            newprice:"108,82",
+            btntext:"Unlock B2B Pricing",
+            link: "#"
+        },
+        {
+            img1: "/p1.png" ,
+            img2: "/p2.png",
+            producttitle: "150cm kunst bloesem roze",
+            botanicalname:"Kersenbloesem",
+            oldprice:"150cm",
+            newprice:"108,82",
+            btntext:"Unlock B2B Pricing",
+            link:"#"
+        },
+        {
+            img1: "/p1.png" ,
+            img2: "/p2.png",
+            producttitle: "150cm kunst bloesem roze",
+            botanicalname:"Kersenbloesem",
+            oldprice:"150cm",
+            newprice:"108,82",
+            btntext:"Unlock B2B Pricing",
+            link:"#"
+        },
+        {
+            img1: "/p1.png" ,
+            img2: "/p2.png",
+            producttitle: "150cm kunst bloesem roze",
+            botanicalname:"Kersenbloesem",
+            oldprice:"150cm",
+            newprice:"108,82",
+            btntext:"Unlock B2B Pricing",
+            link:"#"
+        },
+         {
+            img1: "/p1.png" ,
+            img2: "/p2.png",
+            producttitle: "150cm kunst bloesem roze",
+            botanicalname:"Kersenbloesem",
+            oldprice:"150cm",
+            newprice:"108,82",
+            btntext:"Unlock B2B Pricing",
+            link: "#"
+        },
+        {
+            img1: "/p1.png" ,
+            img2: "/p2.png",
+            producttitle: "150cm kunst bloesem roze",
+            botanicalname:"Kersenbloesem",
+            oldprice:"150cm",
+            newprice:"108,82",
+            btntext:"Unlock B2B Pricing",
+            link:"#"
+        },
+        {
+            img1: "/p1.png" ,
+            img2: "/p2.png",
+            producttitle: "150cm kunst bloesem roze",
+            botanicalname:"Kersenbloesem",
+            oldprice:"150cm",
+            newprice:"108,82",
+            btntext:"Unlock B2B Pricing",
+            link:"#"
+        },
+        {
+            img1: "/p1.png" ,
+            img2: "/p2.png",
+            producttitle: "150cm kunst bloesem roze",
+            botanicalname:"Kersenbloesem",
+            oldprice:"150cm",
+            newprice:"108,82",
+            btntext:"Unlock B2B Pricing",
+            link:"#"
+        },
+
+     
 ]

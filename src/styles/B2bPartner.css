@@ -1,32 +1,87 @@
 .artificial-plants-section {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-block: 90px;
   background-color: #fffaee;
 }
-.artificial-plants-section .title {
+.artificial-plants-section .trusted-heading {
+  font-family: "Avigea";
   font-size: 40px;
-  color: #38472a;
-  margin-bottom: 28px;
-  font-family: "Avigea" !important;
-  margin-top: 0;
+  font-weight: 600;
+  color: #38472A;
   text-align: center;
+  margin-bottom: 32px;
+}
+.artificial-plants-section  .trusted-partners-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.artificial-plants-section .trusted-logos {
+  padding: 10px 10px;
+}
+
+.artificial-plants-section .trusted-logos img {
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .artificial-plants-section .trusted-heading {
+    font-size: 28px;
+  }
+
+  .artificial-plants-section .trusted-logos {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+
+.artificial-plants-section .text-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 60px;
+}
+.artificial-plants-section .text-content .eyebrow-text{
+    text-align: left;
+    font-size: 16px;
+    color: #38472A;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    margin-bottom: 16px;
+} 
+.artificial-plants-section .text-content .partner-title{
+    font-size: 40px;
+    color: #38472a;
+    margin-bottom: 16px;
+    font-family: "Avigea";
+    text-align: left;
+}
+.artificial-plants-section .text-content .partner-description{
+    text-align: left;
+    font-size: 16px;
+    color: #38472A;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 .artificial-plants-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-content: center;
-  gap: 25px;
+  column-gap: 20px;
+  row-gap: 70px;
 }
 .artificial-plants-container .cards-block {
   display: flex;
   flex-direction: column;
   height: auto;
   justify-content: center;
-  aspect-ratio: 1 / 1.25;
+  aspect-ratio: 1 / 1;
 }
 .artificial-plants-container .img-container {
   width: 100%;
-  aspect-ratio: 1/1;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -91,10 +146,7 @@
     padding-top: 40px;
     padding-bottom: 100px;
   }
-  .artificial-plants-section .title {
-    font-size: 36px;
-    margin-bottom: 25px;
-  }
+ 
   .artificial-plants-container {
     gap: 30px 20px;
   }
@@ -110,9 +162,7 @@
 }
 
 @media (max-width: 767px) {
-  .artificial-plants-section .title {
-    font-size: 24px;
-  }
+  
 }
 
 @media (max-width: 576px) {
