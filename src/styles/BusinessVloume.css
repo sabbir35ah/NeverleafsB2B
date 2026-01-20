@@ -87,16 +87,25 @@
 
 
 /* Responsive */
+@media (max-width: 991px) {
+  .b2b-volume-savings .b2b-volume-title {
+    font-size: 30px;
+  }
+}
 @media (max-width: 768px) {
   .b2b-volume-title {
     font-size: 28px;
   }
+  .b2b-card .card-title {
+  font-size: 20px;
+  
+}
 
   .b2b-card {
     max-width: 100%;
   }
   .b2b-volume-savings .b2b-volume-title {
-    font-size: 28px;
+    font-size: 24px;
   }
   .b2b-volume-savings .b2b-card {
     max-width: 300px;

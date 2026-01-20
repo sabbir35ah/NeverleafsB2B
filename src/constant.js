@@ -212,3 +212,23 @@ export const productCard =[
 
      
 ]
+
+export const inspirationItems = [
+  {
+    img: "kunstplant-strelitzia-180cm.jpg",
+  },
+  {
+    img: "kunstolijfboom-160cm.jpg",
+    
+  },
+  {
+    img: "bananenboom-160cm.jpg",
+    
+  },
+  {
+    img: "palm-deluxe.jpg",
+   
+  },
+];
+
+

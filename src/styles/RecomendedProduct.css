@@ -11,11 +11,16 @@
     line-height: 1.25;
 }
 .b2b-recomended-product-section .products-card-continers{
-
+    margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 15px;
 
+}
+@media (max-width: 1100px){
+    .b2b-recomended-product-section .products-card-continers {
+    grid-template-columns: repeat(3, 1fr);
+}
 }
 @media (max-width: 992px){
    .b2b-recomended-product-section h2.section-title {
@@ -33,5 +38,20 @@
     }
     .b2b-product-slider-section .b2b-container {
         padding-inline: 0;
+    }
+}
+@media (max-width: 767px) {
+    .b2b-recomended-product-section .products-card-continers {
+       display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: flex-start;
+        gap: 12px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+        padding-inline: 16px;
+        scroll-padding-inline: 16px;
+        margin-inline: -15px;
     }
 }

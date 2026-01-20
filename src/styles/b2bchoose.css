@@ -65,9 +65,6 @@
 }
 
 @media (max-width: 1400px) {
-  .strategy-section .strategy-content-top-title .strategy-content-top-title-text {
-    font-size: 36px;
-  }
   .strategy-section .strategy-card-item {
     gap: 14px;
   }
@@ -109,8 +106,9 @@
   .strategy-section
     .strategy-content-top-title
     .strategy-content-top-title-text {
-    font-size: 20px;
+    font-size: 24px;
     line-height: normal;
+    margin-bottom: 30px;
   }
   .strategy-content-top-title {
     max-width: 500px;
