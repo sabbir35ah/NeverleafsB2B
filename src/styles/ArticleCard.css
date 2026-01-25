@@ -1,0 +1,107 @@
+.b2b-article-section {
+    padding-block: 90px;
+    background-color: #FFF9EE;
+}
+
+.b2b-article-section .article-section-title {
+    color: #38472A;
+    font-family: Avigea;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125.5%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.b2b-article-section .b2b-articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.b2b-article-section .b2b-articles-grid .b2b-article-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: left;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.b2b-article-section .b2b-articles-grid .b2b-article-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-image-wrapper {
+    height: 250px;
+    width: 100%;
+}
+
+.b2b-article-section .b2b-articles-grid .b2b-article-card .card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 20px;
+    border-radius: 28px;
+}
+
+.b2b-article-section .b2b-card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.b2b-article-section .b2b-card-content .card-title {
+    color: #38472A;
+    font-family: Avigea;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 125.5%;
+    margin-bottom: 22px;
+}
+
+.b2b-article-section .b2b-card-content .card-meta {
+    color: #38472A;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.b2b-article-section .b2b-card-content .card-description {
+    color: #484848;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    flex-grow: 1;
+    margin-top: 20px;
+}
+
+.b2b-article-section .b2b-card-content .read-more {
+    color: var(--Forest, #38472A);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 125.5%;
+    text-transform: capitalize;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.b2b-article-section .b2b-card-content .read-more .arrow {
+    transition: transform 0.2s ease;
+}
+
+.b2b-article-section .b2b-card-content .read-more:hover .arrow {
+    transform: translateX(5px);
+}

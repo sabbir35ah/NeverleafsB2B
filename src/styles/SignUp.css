@@ -1,0 +1,181 @@
+.b2b-request-section {
+    padding-block: 90px;
+    background-color: #FFF9EE;
+}
+
+.b2b-request-section .b2b-container .req-text-block .req-title {
+    color: #38472A;
+    font-family: Avigea;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 125.5%;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.b2b-request-section .b2b-container .req-text-block .req-des {
+    color: #38472A;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125.5%;
+    margin-bottom: 50px;
+}
+
+/* Main Card */
+.b2b-request-section .b2b-container .business-req-main-card {
+    display: flex;
+    gap: 20px;
+}
+
+.b2b-request-section .b2b-container .business-req-main-card .image-side {
+    flex: 1.1;
+}
+
+.b2b-request-section .b2b-container .business-req-main-card .image-side img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.b2b-request-section .b2b-container .business-req-main-card .form-side {
+    flex: 1;
+    padding: 30px 24px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.b2b-request-section .b2b-container .business-req-main-card .form-side .req-form-title {
+    color: #38472A;
+    font-family: Avigea;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125.5%;
+    margin-bottom: 24px;
+}
+
+.b2b-request-section .b2b-container .business-req-main-card .form-side .req-form-subtitle {
+    color: #484848;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    margin-bottom: 30px;
+}
+
+.b2b-request-section .b2b-container .business-req-main-card .form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.b2b-request-section .b2b-container .business-req-main-card .form-row .input-group {
+    flex: 1;
+}
+
+.b2b-request-section .b2b-container .business-req-main-card .input-group {
+    margin-bottom: 18px;
+}
+
+.b2b-request-section .b2b-container .business-req-main-card .input-group .input-title {
+    display: block;
+    color: #484848;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    margin-bottom: 8px;
+
+}
+
+.b2b-request-section .b2b-container .business-req-main-card .input-group input {
+    width: 100%;
+    padding: 16px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #F5F5F5;
+    box-sizing: border-box;
+    font-size: 0.9rem;
+    color: #000;
+}
+
+/* Submit Button */
+.b2b-request-section .b2b-container .business-req-main-card .submit-btn {
+    width: 100%;
+    padding: 16px;
+    background-color: #38472A;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.b2b-request-section .b2b-container .business-req-main-card .submit-btn:hover {
+    background-color: #5f6459;
+}
+
+.b2b-request-section .b2b-container .business-req-main-card .footer-note {
+    color: #14382E;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 16px;
+}
+.input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+/* Responsive Scaling */
+@media (max-width: 991px) {
+    .b2b-request-section .b2b-container .business-req-main-card {
+        flex-direction: column;
+    }
+
+    .b2b-request-section .b2b-container .business-req-main-card .image-side {
+        height: 300px;
+    }
+
+    .b2b-request-section .b2b-container .business-req-main-card .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .b2b-request-section .b2b-container .req-text-block .req-title {
+        font-size: 32px;
+    }
+
+    .b2b-request-section .b2b-container .req-text-block .req-des {
+        font-size: 18px;
+    }
+    .b2b-request-section .b2b-container .business-req-main-card .form-side .req-form-title {
+    font-size: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .b2b-request-section {
+        padding-block: 50px;
+    }
+
+    .b2b-request-section .b2b-container .req-text-block .req-title {
+        font-size: 24px;
+    }
+
+    .b2b-request-section .b2b-container .req-text-block .req-des {
+        font-size: 16px;
+    }
+    .b2b-request-section .b2b-container .business-req-main-card .form-side .req-form-title {
+    font-size: 24px;
+    }
+}

@@ -2,6 +2,8 @@ import { useState } from "react";
 import InspirationPopup from "../../../component/ui/InspirationComp";
 import { inspirationItems } from "../../../constant";
 import '../../../styles/B2binspriration.css'
+import view from '../../../assets/view.svg'
+import dracaena from '../../../assets/dracaenafragrans.webp'
 
 const InspirationSection = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -21,7 +23,7 @@ const InspirationSection = () => {
               <div className="nl-inspiration-block">
                 <div className="img-container">
                   <img
-                    src={`//neverleafs.nl/cdn/shop/files/dracaena-fragrans-150cm.jpg?v=1755753227`}
+                    src={dracaena}
                     alt="inspiration"
                   />
                 </div>
@@ -31,7 +33,7 @@ const InspirationSection = () => {
                   onClick={() => setActiveIndex}
                 >
                   <img
-                    src="//neverleafs.nl/cdn/shop/t/36/assets/full-sc-logo.svg?v=160246037563232275451762073608"
+                    src={view}
                     alt="view"
                   />
                 </div>
@@ -43,7 +45,7 @@ const InspirationSection = () => {
               <div className="nl-inspiration-block">
                 <div className="img-container">
                   <img
-                    src={`//neverleafs.nl/cdn/shop/files/${item.img}`}
+                    src={`${item.img}`}
                     alt="inspiration"
                   />
                 </div>
@@ -53,7 +55,7 @@ const InspirationSection = () => {
                   onClick={() => setActiveIndex(index)}
                 >
                   <img
-                    src="//neverleafs.nl/cdn/shop/t/36/assets/full-sc-logo.svg?v=160246037563232275451762073608"
+                    src={view}
                     alt="view"
                   />
                 </div>

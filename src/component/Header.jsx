@@ -7,6 +7,7 @@ import logo from './../assets/logo.svg';
 import phoneIcon from './../assets/phone-icon.svg';
 import userIcon from './../assets/user-icon.svg';
 import cartIcon from './../assets/cart-icon.svg';
+import { Link } from 'react-router-dom';
 
 const Header =()=> {
     return(
@@ -26,17 +27,17 @@ const Header =()=> {
                                 <a href="#" className="header-text-btn schedule-btn">Schedule Metting</a>
                             </div>
                             <div className="resealler-btn-container">
-                                <a href="#" className="header-text-btn schedule-btn">Become A Reseller?</a>
+                                <Link to="signup" className="header-text-btn schedule-btn">Become A Reseller?</Link>
                             </div>
                         </div>
                         <div className="logo-content">
-                            <a href="#" className="logo-link">
+                            <Link to="/" className="logo-link">
                                 <img src={logo} alt="Neverleaf B2B Logo" className="logo-img"></img>
-                            </a>
+                            </Link>
                         </div>
                         <div className="right-content">
                             <div className="contact-container">
-                                <a href="#" className="contact-link">
+                                <a href="tel:+31850602795" className="contact-link">
                                     <img src={phoneIcon} alt="phone icon" className="contact-icon"></img>
                                     <span className="contact-info">
                                         <span className="contact-text">Contact Us</span>

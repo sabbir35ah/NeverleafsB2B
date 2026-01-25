@@ -3,6 +3,15 @@ import { Choose2 } from "./assets/common-icon/constantIcon";
 import { Choose3 } from "./assets/common-icon/constantIcon";
 import { Choose4 } from "./assets/common-icon/constantIcon";
 
+import Art1 from "./assets/art1.png"
+import Art2 from "./assets/art2.png"
+import Art3 from "./assets/art3.png"
+
+
+import strelitzia from './assets/kunstplant-strelitzia.webp'
+import bananenboom from './assets/bananenboom.webp'
+import kunstolijfboom from './assets/kunstolijfboom.webp'
+import deluxe from './assets/palm-deluxe.webp'
 export const homeFaqData = [
     {
         question: "Zijn kunstplanten echt niet van echt te onderscheiden?",
@@ -215,20 +224,41 @@ export const productCard =[
 
 export const inspirationItems = [
   {
-    img: "kunstplant-strelitzia-180cm.jpg",
+    img: strelitzia ,
   },
   {
-    img: "kunstolijfboom-160cm.jpg",
+    img: bananenboom ,
     
   },
   {
-    img: "bananenboom-160cm.jpg",
+    img: kunstolijfboom ,
     
   },
   {
-    img: "palm-deluxe.jpg",
+    img: deluxe,
    
   },
+];
+
+export const articlessection = [
+{
+    image: Art1,
+    title: 'Hoe kunstplanten buiten beschermen',
+    date: 'Mar 31, 2024',
+    description: 'Hoe kunstplanten beschermen tegen extreem weer? Hoe bescherm je jouw mooie kunstplanten voor buiten tegen extreem weer?'
+},
+{
+    image: Art2,
+    title: 'Hoe kan ik kunstplanten of kunstbloemen schoonmaken',
+    date: 'Mar 31, 2024',
+    description: 'Natuurlijk wil je jouw kunstplanten en kunstbloemen mooi houden. Daardoor behouden ze hun prachtige uitstraling.'
+},
+{
+    image: Art3,
+    title: 'Hoe kunstmatige bomen in de grond planten',
+    date: 'Mar 31, 2024',
+    description: 'Hoe plant je kunstbomen in de grond? Hoe kun je kunstbomen het beste in de grond planten?'
+}
 ];
 
 

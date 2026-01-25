@@ -3,6 +3,7 @@ import HeroRight from '../../../assets/hero-right.png';
 import HeroPerson1 from '../../../assets/hero-person-1.webp';
 import HeroPerson2 from '../../../assets/hero-person-2.webp';
 import '../../../styles/lnd-hero.css';
+import { Link } from 'react-router-dom';
 const LndHero = () => {
     return(
         <section className="b2b-hero-section">
@@ -22,8 +23,8 @@ const LndHero = () => {
                         </ul>
                     </div>
                     <div className="btn-container">
-                        <a className="common-btn hero-white-bg" href="#">Log in to B2B Portal</a>
-                        <a className="common-btn hero-light-bg" href="#">Request Wholesale Access</a>
+                        <Link className="common-btn hero-white-bg" to="login-page">Log in to B2B Portal</Link>
+                        <Link className="common-btn hero-light-bg" to="signup">Request Wholesale Access</Link>
                     </div>
                 </div>
                 <div className="b2b-hero-img-container">
