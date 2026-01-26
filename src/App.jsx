@@ -7,6 +7,7 @@ import ProductPage from './pages/product/ProductPage';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import LoginPage from './pages/login/LoginPage';
 import SignupPage from './pages/signup/SignUpPage';
+import SingleProduct from './pages/product/components/SingleProduct';
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage/>}/>
-        <Route path="product-page" element={<ProductPage/>}/>
+        {/* <Route path="product-page" element={<ProductPage/>}/> */}
+        <Route path="product-page/:id" element={<ProductPage/>}/>
         <Route path="login-page" element={<LoginPage/>}/>
         <Route path="signup" element={<SignupPage/>}/>
       </Routes>

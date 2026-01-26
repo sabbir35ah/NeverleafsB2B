@@ -1,7 +1,7 @@
 import '../../styles/RecomendedProduct.css';
 import '../../styles/base.css';
 
-const RecomendedProductCard =({img1,img2, producttitle,botanicalname,oldprice,newprice,btntext,link})=>{
+const RecomendedProductCard =({img1,img2, producttitle,botanicalname,height,oldprice,newprice,btntext,link})=>{
     return (
             <div className="p-card">
                     <div className="p-card-img ">
@@ -26,12 +26,12 @@ const RecomendedProductCard =({img1,img2, producttitle,botanicalname,oldprice,ne
                                             <rect width="16" height="16" fill="white" />
                                         </clipPath>
                                     </defs>
-                                </svg>
-                            </span>{oldprice}
+                                </svg>{ height }
+                            </span>
                         </div>
                     </div>
                     <div className="p-card-price common-p-card-padding">
-                        <span className="p-card-orginal-price">{newprice}</span>
+                        <span className="p-card-orginal-price">{newprice}</span>{oldprice}
                     </div>
                     <div className="button-container">
                         <a href={link} className="common-btn p-card-btn">{btntext}</a>

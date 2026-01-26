@@ -46,9 +46,9 @@ const Header =()=> {
                                 </a>
                             </div>
                             <div className="login-container">
-                                <a href="#" className="header-logo-btn login-link">
+                                <Link to="login-page" className="header-logo-btn login-link">
                                     <img src={userIcon} alt="user icon" className="login-icon"></img>
-                                </a>
+                                </Link>
                             </div>
                             <div className="cart-container">
                                 <a href="#" className="header-logo-btn cart-link">

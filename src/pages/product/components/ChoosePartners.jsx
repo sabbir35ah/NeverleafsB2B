@@ -6,8 +6,8 @@ import partner1 from '../../../assets/p1.jpg'
 import partner2 from '../../../assets/p2.jpg'
 const Choosepartners = () => {
     return (
-        <section class="artificial-plants-section">
-            <div class="b2b-container">
+        <section className="artificial-plants-section">
+            <div className="b2b-container">
                 <h2 className="trusted-heading">
                     Trusted by professional partners
                 </h2>

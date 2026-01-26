@@ -2,11 +2,11 @@ const PartnerCatalog = ({ link, image, title }) => {
 
     return (
 
-        <a href={link} class="cards-block ">
-            <div class="img-container">
+        <a href={link} className="cards-block ">
+            <div className="img-container">
                 <img src={image} alt="" width="" height="" />
             </div>
-            <h4 class="plant-title">{title}</h4>
+            <h4 className="plant-title">{title}</h4>
         </a>
     );
 

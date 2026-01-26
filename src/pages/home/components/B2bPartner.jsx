@@ -6,8 +6,8 @@ import { trustedPartnerLogos } from '../../../constant'
 import TrustedPartners from '../../../component/ui/Trustedpartner'
 const B2bPartner = () => {
     return (
-        <section class="artificial-plants-section">
-            <div class="b2b-container">
+        <section className="artificial-plants-section">
+            <div className="b2b-container">
                 <h2 className="trusted-heading">
                     Trusted by professional partners
                 </h2>
@@ -35,7 +35,7 @@ const B2bPartner = () => {
                     </div>
                 </div>
 
-                <div class="artificial-plants-container">
+                <div className="artificial-plants-container">
                     {
                         businessPartnerData.map((item) => (
                             <PartnerCatalog link={item.linkUrl} image={item.imgUrl} title={item.title} />
