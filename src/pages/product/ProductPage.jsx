@@ -5,13 +5,14 @@ import RecomendedProduct from "../home/components/RecomendedProduct"
 import B2bInspiration from "./components/B2bInspiration"
 import Choosepartners from "./components/ChoosePartners"
 import PlantImageSlider from "./components/PlantImageSlider"
-import SingleProduct from "./components/SingleProduct"
+import SingleProductGallary from "./components/SingleProductGallary"
+
 
  const ProductPage = () => {
   return (
 
     <>
-        <SingleProduct/>
+      <SingleProductGallary/>
         <B2bInspiration/>
         <PlantImageSlider/>
         <Choosepartners/>
