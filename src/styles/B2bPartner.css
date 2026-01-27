@@ -157,12 +157,15 @@
 }
 
 @media (max-width: 991px) {
-  .artificial-plants-container {
+  .artificial-plants-section .artificial-plants-container {
     grid-template-columns: repeat(2, 1fr);
   }
   .artificial-plants-section .text-content .partner-title{
     font-size: 32px;
     
+}
+  .artificial-plants-section .trusted-partners-container {
+   flex-wrap: wrap;
 }
 
 }
@@ -175,9 +178,6 @@
     padding: 15px 44px 44px;
     
   }
-  .artificial-plants-section .trusted-partners-container {
-   flex-wrap: wrap;
-}
 
   .artificial-plants-container .img-container {
     aspect-ratio: auto;

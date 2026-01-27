@@ -1,0 +1,14 @@
+.menu-drawer-container{
+    background-color: #29422d;
+}
+
+.menu-drawer-container .menu-title{
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+}
+.menu-drawer-container .sub-menu-title{
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+}

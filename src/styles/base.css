@@ -136,6 +136,7 @@ a.common-btn.hero-light-bg {
     padding-bottom: 17px;
     text-decoration: none;
     background-color: #fff;
+    aspect-ratio: .46;
 }
 .p-card-img {
     border-top-left-radius: inherit;
@@ -200,6 +201,7 @@ p.p-card-title {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.65;
+    margin-top: auto;
 }
 .p-card-price {
     color: #55a02f;

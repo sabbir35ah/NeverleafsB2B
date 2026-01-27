@@ -8,9 +8,12 @@ import phoneIcon from './../assets/phone-icon.svg';
 import userIcon from './../assets/user-icon.svg';
 import cartIcon from './../assets/cart-icon.svg';
 import { Link } from 'react-router-dom';
-
+import MenuDrawer from './MenuDrawer';
+import { useState } from 'react';
 const Header =()=> {
+    const [ ismenuOpen, setIsMenuOpen ] = useState(false);
     return(
+<>
         <section className="header-section">
             <div className="header-main-container">
                 <img src={leftToUpLeafs} alt="header-left-to-up-leafs" className="header-left-to-up-leafs"></img>
@@ -18,7 +21,7 @@ const Header =()=> {
                     <div className="header-content-container">
                         <div className="left-content">
                             <div className="menu-btn-container">
-                                <a href="#" className="menu-btn">
+                                <a href="#" className="menu-btn" onClick={() => setIsMenuOpen(!ismenuOpen)}>
                                     <img src={menuIcon} alt="menu icon"></img>
                                     <span className="menu-btn-text">Menu</span>
                                 </a>
@@ -61,7 +64,10 @@ const Header =()=> {
                 </div>
                 <img src={rightTopBottom} alt="header-right-to-down-leafs" className="header-right-to-down-leafs"></img>
             </div>
+
         </section>
+            {ismenuOpen && <MenuDrawer ismenuOpen={ismenuOpen} setIsMenuOpen={setIsMenuOpen} />}
+            </>
     );
 };
 

@@ -86,13 +86,20 @@
     font-size: 28px;
   }
   .b2b-business-features .b2b-features-grid {
-    grid-template-columns: repeat(1, 1fr);
-    max-width: 380px;
+    grid-template-columns: repeat(2, 1fr);
+    
   }
    .b2b-business-features .feature-text .feature-title {
     font-size: 20px;
   }
   .b2b-business-features .feature-text .feature-desc {
     font-size: 18px;
+  }
+}
+
+@media (max-width: 575px) {
+ .b2b-business-features .b2b-features-grid {
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 380px;
   }
 }
