@@ -54,10 +54,10 @@ const Header =()=> {
                                 </Link>
                             </div>
                             <div className="cart-container">
-                                <a href="#" className="header-logo-btn cart-link">
+                                <Link to="cart" className="header-logo-btn cart-link">
                                     <img src={cartIcon} alt="cart icon" className="cart-icon"></img>
                                     <span className="cart-text">0</span>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>

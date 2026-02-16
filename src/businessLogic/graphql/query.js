@@ -4,7 +4,7 @@ query getCollection($handle: String!) {
   collection(handle: $handle) {
     id
     title
-    products(first: 20) {
+    products(first: 8) {
       edges {
         node {
           id
@@ -45,4 +45,5 @@ query getCollection($handle: String!) {
 }
 
 `;
+
 

@@ -1,7 +1,17 @@
+import { Link, useNavigate } from 'react-router-dom';
 import '../../styles/RecomendedProduct.css';
 import '../../styles/base.css';
 
 const RecomendedProductCard =({img1,img2, producttitle,botanicalname,height,oldprice,newprice,btntext,link})=>{
+    const navigate = useNavigate();
+     const handleClick = (e) => {
+    e.preventDefault();
+    if (btntext.includes('Shop Now')) {
+      navigate('/product-page');  // Goes to product page [web:11]
+    } else if (btntext.includes('Unlock B2B Pricing')) {
+      navigate('/login-page');  // Goes to login [web:7]
+    }
+  };  // Navigates to login [web:7]
     return (
             <div className="p-card">
                     <div className="p-card-img ">
@@ -33,8 +43,8 @@ const RecomendedProductCard =({img1,img2, producttitle,botanicalname,height,oldp
                     <div className="p-card-price common-p-card-padding">
                         <span className="p-card-orginal-price">{newprice}</span>{oldprice}
                     </div>
-                    <div className="button-container">
-                        <a href={link} className="common-btn p-card-btn">{btntext}</a>
+                    <div className="button-container" >
+                        <Link to={link} className="common-btn p-card-btn" onClick={handleClick}>{btntext}</Link>
                     </div>
                 </div>
     

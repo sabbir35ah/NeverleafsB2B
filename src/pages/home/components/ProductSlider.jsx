@@ -8,44 +8,46 @@ import '../../../styles/product-slider.css';
 import { Swiper, SwiperSlide } from "swiper/react";
 import RecomendedProductCard from '../../../component/ui/card';
 import { Navigation } from 'swiper/modules';
-import axios from 'axios';
 import { getCollectionByHandler } from '../../../businessLogic/graphql/query';
 const DOMAIN = import.meta.env.VITE_DOMAIN;
 const TOKEN = import.meta.env.VITE_TOKEN;
 import { useEffect } from 'react';
+import { fetchApi } from '../../../businessLogic/api/shopify';
 const ProductSlider = () => {
     const [productList, setProductList] = useState([]);
 
-    const fetchData = async () => {
-        try {
-            const res = await axios.post(
-                `https://${DOMAIN}/api/2024-10/graphql.json`,
-                {
-                    query: getCollectionByHandler,
-                    variables: {
-                        handle: "best-sellers"
-                    }
-                },
-                {
-                    headers: {
-                        "Content-Type": "application/json",
-                        "X-Shopify-Storefront-Access-Token": TOKEN,
-                    }
-                }
-            );
-            return res;
+    // const fetchData = async () => {
+    //     try {
+    //         const res = await axios.post(
+    //             `https://${DOMAIN}/api/2024-10/graphql.json`,
+    //             {
+    //                 query: getCollectionByHandler,
+    //                 variables: {
+    //                     handle: "best-sellers"
+    //                 }
+    //             },
+    //             {
+    //                 headers: {
+    //                     "Content-Type": "application/json",
+    //                     "X-Shopify-Storefront-Access-Token": TOKEN,
+    //                 }
+    //             }
+    //         );
+    //         return res;
 
-        } catch (error) {
-            console.error("Shopify Fetch Error:", error);
-        }
-    }
+    //     } catch (error) {
+    //         console.error("Shopify Fetch Error:", error);
+    //     }
+    // }
     useEffect(() => {
-        const Data = async () => {
-            const res = await fetchData();
+        const fetchProductData = async () => {
+            const res = await fetchApi({query: getCollectionByHandler});
             setProductList(res?.data?.data.collection.products.edges);
+            
         };
-        Data();
+        fetchProductData();
     }, []);
+    console.log("Product List:", productList);
     return (
         <section className="b2b-product-slider-section">
             <div className="b2b-container">
@@ -58,7 +60,8 @@ const ProductSlider = () => {
                                 nextEl: '.product-slider-next',
                                 prevEl: '.product-slider-prev',
                             }}
-                            className="mySwiper"
+                           className="mySwiper"
+                            style={{ height: "75vh" }}
                             spaceBetween={20}
                             slidesPerView={4}
                             breakpoints={{

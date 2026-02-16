@@ -5,6 +5,7 @@ import RecomendedProduct from "../home/components/RecomendedProduct"
 import B2bInspiration from "./components/B2bInspiration"
 import Choosepartners from "./components/ChoosePartners"
 import PlantImageSlider from "./components/PlantImageSlider"
+import ReviewSlider from "./components/ProductReview"
 import SingleProductGallary from "./components/SingleProductGallary"
 
 
@@ -13,6 +14,7 @@ import SingleProductGallary from "./components/SingleProductGallary"
 
     <>
       <SingleProductGallary/>
+        <ReviewSlider/>
         <B2bInspiration/>
         <PlantImageSlider/>
         <Choosepartners/>
