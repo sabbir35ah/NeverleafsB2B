@@ -1,20 +1,26 @@
-import { useState } from "react";
-import InspirationPopup from "../../../component/ui/InspirationComp";
 import { inspirationItems } from "../../../constant";
 import '../../../styles/B2binspriration.css'
 import view from '../../../assets/view.svg'
 import dracaena from '../../../assets/dracaenafragrans.webp'
+import PopUp from "../../../component/ui/PopUp";
+import React from "react";
+import { useState } from "react";
 
 const InspirationSection = () => {
-  const [activeIndex, setActiveIndex] = useState(null);
+
+   const [modalShow, setModalShow] = useState(false);
+   const pop = () => {
+    setModalShow(true);
+   }
+  
 
   return (
     <section className="nl-inspiration-section">
       <div className="common-container">
-        <h1 className="nl-inspiration-title">Laat je inspireren</h1>
+        <h1 className="nl-inspiration-title">Be inspired</h1>
         <p className="nl-inspiration-desc">
-          Ontdek onze prachtige inspiratiegalerij en zie hoe kunstplanten,
-          -bomen en bloemen direct sfeer en stijl aan jouw ruimte kunnen toevoegen.
+          Discover our beautiful inspiration gallery and see how artificial plants,
+          trees and flowers can directly add atmosphere and style to your space.
         </p>
 
         <div className="nl-inspiration-container">
@@ -30,7 +36,7 @@ const InspirationSection = () => {
 
                 <div
                   className="sc-logo"
-                  onClick={() => setActiveIndex}
+                  onClick={pop}
                 >
                   <img
                     src={view}
@@ -41,7 +47,7 @@ const InspirationSection = () => {
             </div>
             <div className="nl-inspiration-last-block">
               <div className="nl-insp-inner-first">
-                {inspirationItems.map((item, index) => (
+                {inspirationItems.map((item) => (
               <div className="nl-inspiration-block">
                 <div className="img-container">
                   <img
@@ -52,7 +58,7 @@ const InspirationSection = () => {
 
                 <div
                   className="sc-logo"
-                  onClick={() => setActiveIndex(index)}
+                  onClick={pop}
                 >
                   <img
                     src={view}
@@ -68,13 +74,8 @@ const InspirationSection = () => {
         </div>
       </div>
 
-      {activeIndex !== null && (
-        <InspirationPopup
-          items={inspirationItems}
-          startIndex={activeIndex}
-          onClose={() => setActiveIndex(null)}
-        />
-      )}
+      <PopUp inspirationItems={inspirationItems}  show={modalShow} onHide={() => setModalShow(false)}  />
+
     </section>
   );
 };

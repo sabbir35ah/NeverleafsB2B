@@ -79,7 +79,7 @@ const ProductSlider = () => {
                                         producttitle={item.node.title}
                                         botanicalname={item.node.metafields[1]?.value}
                                         height={item.node.metafields[0]?.value}
-                                        oldprice={item.node?.ldprice}
+                                        oldprice={item.node?.oldPrice}
                                         newprice={item.node.priceRange.minVariantPrice.amount}
                                         btntext="Shop Now"
                                     />
