@@ -18,7 +18,7 @@ const RecomendedProduct = () => {
             fetchProductData();
            
         }, []);
-        console.log("Product List:", productList);
+        
 
     return (
         <section className="b2b-recomended-product-section">

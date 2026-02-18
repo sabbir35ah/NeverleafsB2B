@@ -13,6 +13,7 @@ const InspirationSection = () => {
     setModalShow(true);
    }
   
+console.log("inspirationItems:", inspirationItems);
 
   return (
     <section className="nl-inspiration-section">

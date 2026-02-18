@@ -82,8 +82,7 @@
   object-position: bottom;
   object-fit: cover;
   border-radius: 30px;
-  /* min-height: 650px; */
-  aspect-ratio: 1.70;
+  
 }
 .custom-main-product-slider-block .first-img-container.custom-temp-feature-image img{
     width: auto;

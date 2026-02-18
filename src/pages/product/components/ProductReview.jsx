@@ -42,11 +42,11 @@ const ReviewSlider = ({ title = [] }) => {
             const fetchProductData = async () => {
                 const res = await fetchApi({query: getCollectionByHandler});
                 setReviews(res?.data?.data.collection.products.edges);
-            console.log("Reviews Response:", res);
+            
             };
             fetchProductData();
         }, []);
-        console.log("Reviews:", reviews);
+        
     return (
         <section className="nlf-reviews-section" id="review-slider">
             <div className="common-container">
