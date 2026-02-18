@@ -7,7 +7,7 @@ import ProductPage from './pages/product/ProductPage';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import LoginPage from './pages/login/LoginPage';
 import SignupPage from './pages/signup/SignUpPage';
-import ShoppingCart from './pages/cart-page/cart';
+import ShoppingCart from './pages/cart-page/Cart';
 
 function App() {
   return (

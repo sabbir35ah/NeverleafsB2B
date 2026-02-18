@@ -10,8 +10,11 @@ import cartIcon from './../assets/cart-icon.svg';
 import { Link } from 'react-router-dom';
 import MenuDrawer from './MenuDrawer';
 import { useState } from 'react';
+import { useCart } from '../contextApi/ContextApi';
 const Header =()=> {
     const [ ismenuOpen, setIsMenuOpen ] = useState(false);
+    const { cartItems } = useCart();
+    
     return(
 <>
         <section className="header-section">
@@ -56,7 +59,7 @@ const Header =()=> {
                             <div className="cart-container">
                                 <Link to="cart" className="header-logo-btn cart-link">
                                     <img src={cartIcon} alt="cart icon" className="cart-icon"></img>
-                                    <span className="cart-text">0</span>
+                                    <span className="cart-text">{cartItems.length}</span>
                                 </Link>
                             </div>
                         </div>

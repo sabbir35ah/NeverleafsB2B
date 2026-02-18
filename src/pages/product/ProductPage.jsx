@@ -46,7 +46,7 @@ const ProductPage = () => {
   return (
     <>
       <SingleProductGallary product={singleProduct} />
-      <ReviewSlider />
+      {/* <ReviewSlider /> */}
       <B2bInspiration />
       <PlantImageSlider />
       <Choosepartners />

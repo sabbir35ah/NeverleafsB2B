@@ -37,7 +37,7 @@ const ProductSlider = () => {
                 prevEl: ".product-slider-prev",
               }}
               className="mySwiper"
-              style={{ height: "75vh" }}
+              style={{ height: "110vh" }}
               spaceBetween={20}
               slidesPerView={4}
               breakpoints={{
