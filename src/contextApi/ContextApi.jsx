@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { createContext, useContext, useState } from 'react';
-import { postCartData } from '../businessLogic/graphql/query';
+
 
 
 const CartContext = createContext();
@@ -29,35 +29,7 @@ export const CartProvider = ({ children }) => {
     });
   };
 
-  const fetchCartData = async () => {
-        try {
-          const res = await axios.post(
-            `https://${import.meta.env.VITE_DOMAIN}/api/2024-10/graphql.json`,
-            {
-              mutation: postCartData,
-              variables: {
-                input: {
-                  lines: cartItems.map((item) => ({
-                    merchandiseId: item.id,
-                    quantity: item.quantity,
-                  })),
-                },
-              },
-            },
-            {
-              headers: {
-                "Content-Type": "application/json",
-                "X-Shopify-Storefront-Access-Token": import.meta.env.VITE_TOKEN,
-              },
-            },
-          );
-          console.log("Cart data posted successfully:", res.data);
-          
-         
-        } catch (error) {
-          console.error("Error posting cart data:", error);
-        }
-      };
+ 
 
   const removeFromCart = (productId) => {
     setCartItems((prevItems) =>
@@ -69,7 +41,6 @@ export const CartProvider = ({ children }) => {
     cartItems,
     addToCart,
     removeFromCart,
-    fetchCartData,
   };
 
   return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
