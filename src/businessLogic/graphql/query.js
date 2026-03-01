@@ -1,4 +1,3 @@
-
 export const getCollectionByHandler = `
 query getCollection($handle: String!) {
   collection(handle: $handle) {
@@ -46,9 +45,7 @@ query getCollection($handle: String!) {
 
 `;
 
-
-export const getProductByHandle =
-`
+export const getProductByHandle = `
         query getProduct($handle: String!) {
           productByHandle(handle: $handle) {
             id
@@ -90,7 +87,29 @@ export const getProductByHandle =
         }
       `;
 
+// query.js
 
-    
-
-
+export const CART_CREATE_MUTATION = `
+  mutation cartCreate($input: CartInput!) {
+    cartCreate(input: $input) {
+      cart {
+        id
+        checkoutUrl
+        lines(first: 10) {
+          edges {
+            node {
+              id
+              quantity
+              merchandise {
+                ... on ProductVariant {
+                  id
+                  title
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`;

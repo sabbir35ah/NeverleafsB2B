@@ -11,10 +11,12 @@ const DOMAIN = import.meta.env.VITE_DOMAIN;
 const TOKEN = import.meta.env.VITE_TOKEN;
 import { useCart } from "../../../contextApi/ContextApi";
 
+
 const SingleProductGallary = ({ product }) => {
   const [thumbsSwiper] = React.useState(null);
   const [quantity, setQuantity] = useState(1);
-  const { addToCart } = useCart();  
+  const { createCart } = useCart();
+
 
   const handleMinus = () => {
     if (quantity > 1) {
@@ -26,13 +28,14 @@ const SingleProductGallary = ({ product }) => {
     setQuantity(quantity + 1);
   };
 
+  
   const handleAddToCart = (e) => {
     e.preventDefault();
-    console.log("Adding to cart:", product, "Quantity:", quantity);
-    addToCart({ ...product, quantity });
-  }
+    createCart(product.variantId, 1);
+  };
+
+  console.log("product", product);
   
-  console.log("product:",product?.images);
 
 
   return (

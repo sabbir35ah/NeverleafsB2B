@@ -1,47 +1,56 @@
-import axios from 'axios';
-import React, { createContext, useContext, useState } from 'react';
 
-
-
-const CartContext = createContext();
-
-
-export const useCart = () => {
-  return useContext(CartContext);
-};
+import {  useState } from 'react';
+import { createCartService } from '../businessLogic/graphql/cartService';
 
 export const CartProvider = ({ children }) => {
-  const [cartItems, setCartItems] = useState([]);
+  const [ setCart] = useState(null);
 
-  const addToCart = (product) => {
-    setCartItems((prevItems) => {
-      const isItemInCart = prevItems.find((item) => item.id === product.id);
+  const createCart = async (variantId, quantity) => {
+    try {
+      const response = await createCartService({
+        input: {
+          lines: [
+            {
+              merchandiseId: variantId,
+              quantity,
+            },
+          ],
+        },
+      });
 
-      if (isItemInCart) {
-        return prevItems.map((item) =>
-          item.id === product.id
-            ? { ...item, quantity: item.quantity + 1 }
-            : item
-        );
-      } else {
-        return [...prevItems, { ...product, quantity: 1 }];
-      }
-    });
+      const newCart = response.data.data.cartCreate.cart;
+
+      setCart(newCart);
+      localStorage.setItem("cartId", newCart.id);
+
+    } catch (error) {
+      console.error("Cart error:", error);
+    }
   };
 
  
+  const removeFromCart = (lineId) => {
+  setCart((prevCart) => {
+    if (!prevCart) return prevCart;
 
-  const removeFromCart = (productId) => {
-    setCartItems((prevItems) =>
-      prevItems.filter((item) => item.id !== productId)
-    );
-  };
-
+    return {
+      ...prevCart,
+      lines: {
+        ...prevCart.lines,
+        edges: prevCart.lines.edges.filter(
+          (line) => line.node.id !== lineId
+        ),
+      },
+    };
+  });
+};
   const value = {
-    cartItems,
-    addToCart,
     removeFromCart,
+    createCart
+     
+   
   };
+console.log(value);
 
-  return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
+  return <CartContext.Provider value={value }>{children}</CartContext.Provider>;
 };
